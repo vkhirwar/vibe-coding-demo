@@ -17,6 +17,15 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 </style>
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+
+h1 {
+animation: pulse 2s infinite ease-in-out;
+}
 <h1>Welcome to my Live Site!!</h1>
 <button id="colorButton">Change Vibe</button>
 <script>
