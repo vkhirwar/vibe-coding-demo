@@ -37,7 +37,13 @@
 </style>
 <h1>Welcome to my Live Site!!</h1>
 <button id="colorButton">Change Vibe</button>
+<button id="themeButton">Toggle Dark Mode</button>
 <script>
+    const themeBtn = document.getElementById('themeButton');
+    themeBtn.addEventListener('click', () => {
+        document.body.style.backgroundColor =
+            document.body.style.backgroundColor === 'black' ? '#f0f4f8' : 'black';
+    });
     const button = document.getElementById('colorButton');
     const title = document.querySelector('h1');
 
