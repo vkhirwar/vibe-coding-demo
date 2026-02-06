@@ -1,0 +1,9 @@
+name: Greeting Robot
+on: [push] # This tells the robot to wake up every time you push code!
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the Developer
+        run: echo "Hello! I am your GitHub Action robot. I just checked your push and it looks great!"
