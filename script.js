@@ -8,6 +8,15 @@ const title = document.querySelector('h1');
 
 button.addEventListener('click', () => {
     title.style.color = 'hotpink';
+
+    // --- NEW API CODE STARTS HERE ---
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('quote-text').innerText = data.slip.advice;
+        })
+        .catch(error => console.log("Messenger failed:", error));
+    // --- NEW API CODE ENDS HERE ---
 });
 const blueBtn = document.getElementById('blueButton');
 
