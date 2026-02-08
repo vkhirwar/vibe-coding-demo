@@ -21,5 +21,6 @@ button.addEventListener('click', () => {
 const blueBtn = document.getElementById('blueButton');
 
 blueBtn.addEventListener('click', () => {
-    document.body.style.backgroundColor = 'royalblue';
+    // This updates the 'container' at the top of your CSS
+    document.documentElement.style.setProperty('--main-bg', 'var(--vibe-blue)');
 });

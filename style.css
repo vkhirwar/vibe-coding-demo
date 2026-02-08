@@ -1,11 +1,25 @@
+:root {
+    --main-bg: #f0f4f8;
+    --vibe-blue: royalblue;
+    /* Change '--vibe-color' to '--vibe-blue' */
+    --accent-text: hotpink;
+}
+
 body {
-    background-color: #f0f4f8;
+    background-color: var(--main-bg);
+    transition: 0.5s;
+
+    /* The Centering Magic 🪄 */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* Centers horizontally */
+    justify-content: center;
+    /* Centers vertically */
+    min-height: 100vh;
+    /* Makes the body as tall as the screen */
     margin: 0;
-    font-family: sans-serif;
+    /* Removes default browser gaps */
 }
 
 h1 {
