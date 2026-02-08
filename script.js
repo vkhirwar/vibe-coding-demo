@@ -9,3 +9,8 @@ const title = document.querySelector('h1');
 button.addEventListener('click', () => {
     title.style.color = 'hotpink';
 });
+const blueBtn = document.getElementById('blueButton');
+
+blueBtn.addEventListener('click', () => {
+    document.body.style.backgroundColor = 'royalblue';
+});
